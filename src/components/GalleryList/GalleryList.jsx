@@ -1,28 +1,19 @@
+import GalleryItem from '../GalleryItem/GalleryItem'
 
-function GalleryList({gallery}){
-    return(
+function GalleryList({ gallery, fetchGallery }) {
+    return (
         <>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ahhh</th>
-                        <th>what's happening</th>
-                        <th>eeeep</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {gallery.map(galleryItem => (
-                        <tr key={galleryItem.id}>
-                            <td>{galleryItem.path}</td>
-                            <td>{galleryItem.description}</td>
-                            <td>{galleryItem.likes}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-
+            <div>
+                {gallery.map(galleryItem => (
+                    <GalleryItem key={galleryItem.id}  galleryItem={galleryItem}
+                    fetchGallery={fetchGallery}
+                    />))}
+            </div>
 
         </>
+
+
+
     )
 }
 

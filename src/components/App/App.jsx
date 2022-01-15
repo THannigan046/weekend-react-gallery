@@ -22,11 +22,10 @@ function App() {
     
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
+          <h1 className="App-title">Shrek Shrine</h1>
         </header>
         <p>Gallery goes here</p>
-        <GalleryList  gallery={gallery}/>
-        <img src="images/goat_small.jpg"/>
+        <GalleryList fetchGallery={fetchGallery}  gallery={gallery}/>
       </div>
     
     );
