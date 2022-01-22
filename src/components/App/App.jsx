@@ -24,7 +24,7 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Shrek Shrine</h1>
         </header>
-        <p>Gallery goes here</p>
+        
         <GalleryList fetchGallery={fetchGallery}  gallery={gallery}/>
       </div>
     
